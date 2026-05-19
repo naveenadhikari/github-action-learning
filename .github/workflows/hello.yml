@@ -16,8 +16,9 @@ jobs:
       - name: Show the date
         run: date
 
-      - name: Show who I am
-        run: whoami
+  job2:
+    runs-on: ubuntu-latest
 
-      - name: List files
-        run: ls -la
+    steps:
+      - name: Print Date
+        run:  date

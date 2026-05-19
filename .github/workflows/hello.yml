@@ -22,7 +22,7 @@ jobs:
 
     steps:
       - name: Print Date
-        run:  date
+      run:  date
 
 
   job3:

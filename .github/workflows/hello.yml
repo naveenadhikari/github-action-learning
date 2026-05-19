@@ -11,13 +11,14 @@ jobs:
 
     steps:
       - name: Say hello
-        run: echo "Hello from GitHub Actions!"
+    run: echo "Hello from GitHub Actions!"
 
       - name: Show the date
         run: date
 
   job2:
     runs-on: ubuntu-latest
+    needs: greet
 
     steps:
       - name: Print Date
